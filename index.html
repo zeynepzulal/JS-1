@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Basics</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Javascript Aritmetic</h1>
+    <p id="demo"></p>
+
+    <script>
+        // dogru kod tipi     
+        let x = 5;
+        let y = 2;
+        let z = x * y;
+        document.getElementById("demo").innerHTML = z;
+
+        // alert ("Hello js" + z) site mesaji yazabilirsin ,acilirken cikiyor.
+
+        let num1; //tanimlanmamis kullanici tarafindan tanimlanicak
+       // num1 = prompt("Input a number"); //window.prompt
+       // document.getElementById("demo").innerHTML = num1;
+
+
+        //Assignment operators
+        // = 
+
+        // +=
+         let x1 = 10;
+         let z2 = x1 += 2;
+         document.getElementById("demo").innerHTML = z2;
+
+        //**=
+        let xz = 2;
+        let result = xz **= 5; //üslü sayilar
+        document.getElementById("demo").innerHTML = result;
+
+
+        //comparison operators (karsilastirma operatörleri)
+        //< , >
+        let a1 = 5, b1 = 10;
+        console.log(a1 < b1); //consol a yazar
+
+        //==
+        console.log(a1==b1);
+        console.log( a1=='5'); //true
+        console.log( a1 != '5'); //false
+
+
+        // === (strict operators)
+        console.log("===" + (a1 === '5'));// false tipleri de ayni olmali ama burada biri string biri sayi
+        console.log(a1 !=='5'); // esit degil, demek yani ayni
+
+        //logical operators
+        //&& -> and , || -> or , !-> not(degili)
+
+        let n = 5, m = 3;
+        console.log((n < 6)&&( m<5));
+
+        console.log(!true); //false
+
+
+        //conditional statements (degisebilen durumlar)
+        let age = 15;
+        if( age > 18 ){
+            console.log("Mekana Girebilir.");
+        }
+        // bir sey yazmiyor
+
+        let age1 = 20;
+        if( age1 > 18 ){
+            console.log("Mekana Girebilir.");
+        }
+
+
+
+        let age2 = 20;
+        if( age2 > 18 ){
+            console.log("Mekana Girebilir.");
+        }
+        else{
+            console.log("Giremez");
+        }
+
+        let age3 = 10;
+        if( age3 >= 18 ){
+            console.log("Mekana Girebilir.");
+        }
+        else{
+            console.log("Giremez");
+        }
+
+        // accept 2 numbers from user with prompt
+        //larger one will be written
+        let num3 = prompt("Input first number");
+        let num4 = prompt("Input second number");
+        if( num3 >= num4 ){
+            document.getElementById("demo").innerHTML = num3;
+        }
+        else{
+            document.getElementById("demo").innerHTML = num4;
+        }
+
+        
+
+
+
+
+    </script>
+</body>
+
+</html>
